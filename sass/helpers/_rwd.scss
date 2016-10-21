@@ -1,0 +1,192 @@
+@media (min-width: 1200px) {
+	.bg-photo:before {
+		@include bgScale;
+	}
+}
+
+@media (max-width: 1150px) {
+	.bg-photo {
+		margin-bottom: 0;
+		height: 650px;
+	}
+
+	.random-titles {
+		padding: 100px;
+		h3 {
+			font-size: 40px;
+			padding: 0 60px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	h1{
+		font-size: 26px;
+	}
+
+	h2{
+		font-size: 22px;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	p,article {
+		font-size: 14px;
+	}
+
+	.bg-photo {
+		height: 500px;
+	}
+
+	.menu-btn {
+		top: 10px;
+		right: 10px;
+		padding: 5px 10px;
+
+		.fa {
+			padding-top: 3px;
+			font-size: 17px;
+		}
+	}
+
+	.random-titles {
+		padding: 70px;
+		h3 {
+			font-size: 32px;
+			padding: 0 40px;
+		}
+	}
+
+	.gallery-div {
+		height: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	h1{
+		font-size: 23px;
+	}
+
+	h2{
+		font-size: 19px;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	p,article {
+		font-size: 13px;
+	}
+
+	.bg-photo {
+		height: 350px
+	}
+
+	.menu-item {
+		width: 100%;
+		padding: 100px 70px;
+		li {
+			font-size: 22px;
+		}
+	}
+
+	.random-titles {
+		padding: 50px;
+		h3 {
+			font-size: 28px;
+			padding: 0 20px;
+		}
+	}
+
+	.image-section {
+		img {
+			display: none;
+		}
+	}
+
+	.info-image {
+		h4, article {
+			text-align: center;
+		}
+	}
+
+	.gallery-div {
+		height: 350px;
+	}
+}
+
+@media (max-width: 550px) {
+	h1{
+		font-size: 18px;
+	}
+
+	h2{
+		font-size: 16px;
+	}
+
+	h3{
+		font-size: 14px;
+	}
+
+	.bg-header-info {
+		p {
+			padding: 5px;
+		}
+	}
+
+	.random-titles {
+		padding: 50px 20px;
+		h3 {
+			font-size: 22px;
+			padding: 0;
+		}
+	}
+
+	.gallery-div {
+		height: 300px;
+	}
+
+}
+
+@media (max-width: 450px) {
+	.bg-photo {
+		height: 300px
+	}
+
+	.menu-item {
+		width: 100%;
+
+		li {
+			font-size: 18px;
+		}
+	}
+
+	.random-titles {
+		padding: 50px 20px;
+		h3 {
+			font-size: 18px;
+			padding: 0 15px;
+		}
+	}
+
+	.gallery-div {
+		height: 300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.menu-item {
+		width: 100%;
+
+		li {
+			font-size: 16px;
+		}
+	}
+
+	footer {
+		padding: 80px 30px;
+	}
+}

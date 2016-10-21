@@ -1,0 +1,77 @@
+// IMAGE SECTION
+.image-section {
+	background-color: $grayColorSection;
+
+	article {
+		padding: 15px 0;
+		text-align: justify;
+	}
+
+	.info-image {
+		padding-top: 40px;
+	}
+}
+
+// PROJECT GALLERY
+.project-gallery {
+	padding-bottom: 0;
+	p{
+		text-align: center;
+	}
+}
+
+.gallery-container {
+	margin-top: 55px;
+}
+
+.gallery-row {
+	position: relative;
+}
+
+.gallery-div {
+	overflow: hidden;
+	position: relative;
+	height: 450px;
+	z-index: 1;
+
+	&:before {
+		@include size(100%, 100%);
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition-duration: 0.8s;
+	}
+}
+
+.big {
+	&:before {
+		@include backgroundImg('photo1', 'center', cover);
+	}
+
+	&:hover.big:before {
+		transform: scale(1.1);
+	}
+}
+
+.small {
+	&:before {
+		@include backgroundImg('photo2', 'center', cover);
+	}
+
+	&:hover.small:before {
+		transform: scale(1.1);
+	}
+}
+
+.full {
+	height: 500px; 
+
+	&:before {
+		@include backgroundImg('photo3', 'center', cover);
+	}
+
+	&:hover.full:before {
+		transform: scale(1.1);
+	}
+}

@@ -1,0 +1,87 @@
+// MENU
+.menu {
+	position: fixed;
+	@include size(100%, 100%);
+	top: 0;
+	right: 0;
+	background-color: $whiteColor;
+	z-index: 999;
+	margin-right: -100%;
+	overflow-y: auto;
+	transition: margin cubic-bezier(.17,.67,.83,.67) .6s;
+}
+
+.menu-open {
+	margin-right: 0;
+}
+
+.menu-item {
+	position: absolute;
+	width: 60%;
+	min-height: 300px;
+	margin: auto;
+	padding: 50px;
+	text-align: center;
+	@include centerPostion;
+
+	li {
+		display: block;
+		margin: 20px;
+		padding: 15px 0;
+		font-size: 30px;
+		cursor: pointer;
+		transition-duration: 0.6s;
+		font-weight: bold;
+		color: $menuLink;
+		border-bottom: 1px solid #B4B1B1;
+		
+		&:hover {
+			color: $greenColor;
+		}
+	}
+}
+
+// BIG PHOTO
+.bg-photo {
+	@include size(100%, 100vh);
+	overflow: hidden;
+	position: relative;
+	background-color: $whiteColor;
+
+	&:before {
+		@include size(100%, 100%);
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include backgroundImg('bgphoto', 'center', 100% 100%);
+		filter: brightness(70%);
+	}
+}
+
+// BG HEADER INFO
+.bg-header-info {
+	position: absolute;
+	@include centerPostion;
+	p {
+		font-size: 17px;
+		color: $paragrapHeaderColor;
+		text-align: center;
+		padding: 10px;
+	}
+	z-index: 3;
+}
+
+// MOUSE SCROLL
+.mouse-scroll {
+	@include size(20px, 40px);
+	@include mousePosition;
+	position: absolute;
+	bottom: 10px;
+	left: calc(50% - 10px);
+	z-index: 5;
+
+	img {
+		@include size(100%, 100%);
+	}
+}

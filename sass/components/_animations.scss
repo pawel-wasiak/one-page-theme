@@ -1,0 +1,48 @@
+// HEADER IMG FOTO ANIMATIONS
+@keyframes backgroundScale{
+	to {
+		transform: scale(1.3);
+	}
+}
+
+@-webkit-keyframes backgroundScale{
+	to {
+		transform: scale(1.3);
+	}
+}
+
+@keyframes mouse_position{
+	0% {
+		bottom: 10px
+	}
+
+	50% {
+		bottom: 5px
+	}
+
+	100% {
+		bottom: 10px
+	}
+}
+
+@-webkit-keyframes mouse_position{
+	0% {
+		bottom: 10px
+	}
+
+	50% {
+		bottom: 5px
+	}
+
+	100% {
+		bottom: 10px
+	}
+}
+
+@mixin mousePosition {
+	@include animations(mouse_position, 1s, infinite, 0);
+}
+
+@mixin bgScale {
+	@include animations(backgroundScale, 40s, 1, 0.2s, forwards);
+}

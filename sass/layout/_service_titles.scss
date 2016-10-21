@@ -1,0 +1,62 @@
+// SERVICE
+.service {
+	.fa {
+		display: block;
+		text-align: center;
+		font-size: 50px;
+		padding-top: 22px;
+		margin: 25px auto;
+		@include size(100px, 100px);
+		color: $greenColor;
+		border: 2px solid $borderColor;
+		border-radius: 90px;
+		@include transition(all, 0.7s, ease-out);
+	}
+
+	article {
+		text-align: center;
+	}
+
+	.col-md-4 {
+		&:hover {
+			.fa {
+				background-color: $greenColor;
+				color: $whiteColor;
+				border: 2px solid $greenColor;
+			}
+		}
+	}
+}
+
+// RANDOM TITLES
+.random-titles {
+	padding: 120px;
+	overflow: hidden;
+	background: rgba(89,89,89,1);
+    background: -moz-linear-gradient(left, rgba(89,89,89,1) 0%, rgba(81,81,81,1) 22%, rgba(56,56,56,1) 86%, rgba(51,51,51,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(89,89,89,1)), color-stop(22%, rgba(81,81,81,1)), color-stop(86%, rgba(56,56,56,1)), color-stop(100%, rgba(51,51,51,1)));
+    background: -webkit-linear-gradient(left, rgba(89,89,89,1) 0%, rgba(81,81,81,1) 22%, rgba(56,56,56,1) 86%, rgba(51,51,51,1) 100%);
+    background: -o-linear-gradient(left, rgba(89,89,89,1) 0%, rgba(81,81,81,1) 22%, rgba(56,56,56,1) 86%, rgba(51,51,51,1) 100%);
+    background: -ms-linear-gradient(left, rgba(89,89,89,1) 0%, rgba(81,81,81,1) 22%, rgba(56,56,56,1) 86%, rgba(51,51,51,1) 100%);
+    background: linear-gradient(to right, rgba(89,89,89,1) 0%, rgba(81,81,81,1) 22%, rgba(56,56,56,1) 86%, rgba(51,51,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', endColorstr='#333333', GradientType=1 );
+	
+	h3 {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 1.4;
+		text-align: justify;
+		padding: 0 2%;
+		margin: auto;
+		display: inline-block;
+	}
+
+	.random-title {
+		color: #CACACA;
+		display: none;
+	}
+
+	.active {
+		display: inline-block;
+	}
+}

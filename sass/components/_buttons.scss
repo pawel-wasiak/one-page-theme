@@ -1,0 +1,24 @@
+button {
+	outline: none;
+}
+
+.menu-btn {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	background: none;
+	border: none;
+	color: $whiteColor;
+	background-color: $blackColor;
+	padding: 10px 15px;
+	z-index: 9999;
+	.fa {
+		padding-top: 5px;
+		font-size: 22px;
+	}
+}
+
+.bt-hidden {
+	display: none;
+	transition-duration: 1s;
+}

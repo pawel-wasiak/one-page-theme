@@ -1,0 +1,66 @@
+%clearfix {
+    @include clearfix;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+body
+{
+	font-size: 16px;
+	color: #000;
+	font-family: 'Arimo', sans-serif;
+}
+
+html, body
+{
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
+}
+
+h1 {
+	color: $whiteColor;
+	font-size: 60px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 29px;
+	padding: 0 15px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	padding: 0 15px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #7A7979;
+}
+
+h4 {
+	font-size: 20px;
+	color: #4D4B4B;
+}
+
+p, article {
+	margin: 10px 0;
+	padding: 15px;
+	font-size: 16px;
+	color: $paragraphColor;
+}
+
+section {
+	padding: 55px 0;
+	background-color: $whiteColor;
+}
+
+hr {
+	width: 30px;
+	height: 2px;
+	border: none;
+	background-color: $greenColor;
+}
